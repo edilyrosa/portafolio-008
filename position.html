@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejemplo position con Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-8 font-sans">
+
+  <h1 class="text-3xl font-bold mb-8">Ejemplos de <code>position</code> con Tailwind CSS</h1>
+
+  <!-- 1. static -->
+  <section class="mb-16">
+    <h2 class="text-xl font-semibold mb-4">1. position: static (por defecto)</h2>
+    <div class="bg-gray-300 rounded">
+      <div class="bg-gray-700 text-white p-6 rounded w-40 static">
+        static<br>(flujo normal)
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. relative -->
+  <section class="mb-16">
+    <h2 class="text-xl font-semibold mb-4">2. position: relative: no tiene que ver con su padre o el viewport, 
+        su posicionamiento es relativo a su posición original en el flujo normal del documento.
+    </h2>
+    <div class="bg-blue-200 rounded h-40">
+      <div class="bg-blue-700 text-white p-6 rounded shadow-lg
+            relative bottom-0 right-10">
+        relative<br>(desplazado)
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. absolute -->
+  <section class="mb-16">
+    <h2 class="text-xl font-semibold mb-4">3. position: absolute, El elemento se posiciona respecto 
+        a su ancestro posicionado más cercano que tenga una posición distinta a static</h2>
+    <div class="bg-green-200 p-8 rounded relative h-40"> soy el padre RELATIVE
+      <div class="bg-green-700 text-white p-6 rounded 
+      absolute bottom-0 right-0">
+        absolute<br>(respecto al contenedor relativo)
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. fixed -->
+  <section class="mb-16 h-64 bg-red-100 rounded p-6">
+    <h2 class="text-xl font-semibold mb-4">4. position: fixed, El elemento se posiciona relativo a la ventana del navegador (viewport).</h2>
+    <p class="mb-4">Haz scroll para ver que el cuadro rojo permanece fijo en la esquina inferior derecha.</p>
+    <div class="bg-red-700 text-white p-6 
+        fixed bottom-0 right-0"> fixed<br>(fijo en viewport)
+    </div>
+  </section>
+
+
+
+  <!-- 5. sticky -->
+  <section class="mb-16">
+    <h2 class="text-xl font-semibold mb-4">5. position: sticky</h2>
+    <div class="bg-yellow-200 rounded h-48 overflow-y-auto
+        border-2 border-yellow-400 p-4">
+      <div class="bg-yellow-600 text-white p-4 rounded 
+        sticky top-0 shadow">
+        sticky<br>(se queda pegado arriba al hacer scroll)
+      </div>
+      <div class="mt-4 h-64 bg-yellow-100 rounded p-2 text-yellow-900">
+        <p>Contenido para hacer scroll dentro del contenedor amarillo.</p>
+        <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, justo at laoreet commodo, libero orci facilisis erat, nec scelerisque lorem lorem non libero.</p>
+        <p class="mt-2">Duis a turpis id mi commodo luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p class="mt-2">Integer at sapien ut sapien pretium dignissim. Morbi vestibulum, nunc at cursus porttitor, elit purus tincidunt lacus, nec suscipit augue ligula et ex.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque ea a iure repellat. Hic, numquam delectus earum sapiente praesentium modi officiis, blanditiis doloribus obcaecati tenetur ex reiciendis, impedit error.</p>
+</body>
+</html>

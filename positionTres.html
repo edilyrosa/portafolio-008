@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Position</title>
+    <!-- <style>
+        section {
+            position: static;
+        }
+
+    </style> -->
+</head>
+<body>
+    <h1>PROPIEDAD CSS POSITION</h1>
+
+    <div class="mt-[200px]">
+        <section class="mb-16 bg-blue-200 h-[200px]">1. propiedad static</section>
+        <section class="mb-16 bg-red-200 h-[200px] relative top-10 left-20 w-[200px]">2. propiedad relative</section>
+        
+        <section class="mb-16 bg-green-200 h-[200px] relative">3. Soy padre RELATIVE
+            <div class="bg-green-800 h-[100px] absolute bottom-0 right-10 shadow-2xl"> propiedad absolute: SOY HIJO ABSOLUTE
+            </div>
+        </section>
+
+
+        <section class="mb-16 bg-gray-200 h-[200px] fixed top-0 right-0 left-0">4. propiedad fixed</section>
+        <section class="mb-16 bg-yellow-200 h-[200px]">5. propiedad sticky</section>
+    </div>
+    
+</body>
+</html>
